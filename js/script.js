@@ -2,10 +2,14 @@ const myForm = document.getElementById('Form');
 const nombre = document.getElementById('nombre');
 const email = document.getElementById('correoUsuario');
 const contraseña = document.getElementById('contraseña'); 
-const confirmContraseña = document.getElementById('repetirContraseña');
+const confirmContraseña = document.getElementById
+('repetirContraseña');
 const fecha = document.getElementById('Fecha'); 
 const mailFormato = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const contraseñaFormato = /(?=(.*[0-9]))(?=(.*[A-Z]))(?=(.*[a-z]))/;  
+const contraseñaFormato = /(?=(.*[0-9]))(?=(.*[A-Z]))(?=(.*[a-z]))/; 
+const FormInicioSesion = document.getElementById('loginForm'); 
+const emailInicioSesion = document.getElementById('emailUser') ;
+const passwordInicioSesion = document.getElementById('passwordUser') ;
 myForm.addEventListener('submit', (event) => { 
     event.preventDefault(); 
     let mensajeExito = ""
@@ -98,4 +102,4 @@ myForm.addEventListener('submit', (event) => {
           alert('Error al iniciar sesión. Por favor, inténtalo de nuevo más tarde.');
       });
 
-})     
+})   

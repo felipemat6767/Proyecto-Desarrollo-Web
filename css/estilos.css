@@ -255,14 +255,33 @@ input[type="submit"]:hover {
     font-size: small;
     margin: 20px;
 }
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7dcd81;
+}
+.usuarios h3{
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+}
+.usuarios span{ 
+    padding: 10px;
+}
+.usuarios span a{
+    text-decoration: none; 
+    padding: 10px;
+}
 footer{
     height: 40vh;
     background-color: #310072;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
-    align-items: center;
-    overflow: hidden;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px;
 }
 
 .info-contacto-footer{
